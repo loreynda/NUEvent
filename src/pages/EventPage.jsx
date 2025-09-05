@@ -23,6 +23,7 @@ const EventPage = () => {
     return (
         <Background>
             <div
+                className="event-grid"
                 style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(3, 1fr)',
@@ -31,7 +32,7 @@ const EventPage = () => {
                     justifyItems: 'center',
                     width: '100%',
                     maxWidth: '1200px',
-                    margin: '0 auto',
+                    margin: '4rem auto 0 auto', 
                 }}
             >
                 {events.map((event, idx) => (
@@ -44,6 +45,24 @@ const EventPage = () => {
                     />
                 ))}
             </div>
+            <style>{`
+                @media (max-width: 900px) {
+                    .event-grid {
+                        grid-template-columns: repeat(2, 1fr) !important;
+                        gap: 1.5rem !important;
+                        padding: 2rem 1rem !important;
+                        margin-top: 5rem !important;
+                    }
+                }
+                @media (max-width: 600px) {
+                    .event-grid {
+                        grid-template-columns: 1fr !important;
+                        gap: 1rem !important;
+                        padding: 1rem 0.5rem !important;
+                        margin-top: 5rem !important;
+                    }
+                }
+            `}</style>
         </Background>
     );
 };
