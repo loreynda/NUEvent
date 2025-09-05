@@ -57,6 +57,7 @@ const EventTile = ({ title, date, location, image }) => {
             >
                 {location}
             </div>
+            {/* for responsiveness */}
             <style>{`
                 @media (max-width: 900px) {
                     .event-tile {

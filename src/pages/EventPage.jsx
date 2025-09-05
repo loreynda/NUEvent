@@ -45,6 +45,8 @@ const EventPage = () => {
                     />
                 ))}
             </div>
+
+            {/* for responsiveness */}
             <style>{`
                 @media (max-width: 900px) {
                     .event-grid {
