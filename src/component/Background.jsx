@@ -14,7 +14,7 @@ const Background = ({ children }) => {
                 alignItems: 'center',
             }}
         >
-            {/* Background image */}
+            {/* bgimage design */}
             <img
                 src={bg_image}
                 alt="Background"
@@ -28,7 +28,7 @@ const Background = ({ children }) => {
                     zIndex: 0,
                 }}
             />
-            {/* Blue overlay */}
+            {/* blue overlay */}
             <div
                 style={{
                     position: 'absolute',
@@ -36,11 +36,11 @@ const Background = ({ children }) => {
                     left: 0,
                     width: '100%',
                     height: '100%',
-                    background: 'rgba(59, 70, 150, 0.6)', // #3b4696 with opacity
+                    background: 'rgba(59, 70, 150, 0.6)', 
                     zIndex: 1,
                 }}
             />
-            {/* Content */}
+            {/* content */}
             <div style={{ position: 'relative', zIndex: 2, width: '100%' }}>
                 {children}
             </div>
